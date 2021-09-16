@@ -1,0 +1,26 @@
+server:
+  port: 9401
+spring:
+  profiles:
+    active: dev
+  application:
+    name: micro-serverless-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 10.30.5.92:8848
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  redis:
+    database: 0
+    port: 6379
+    host: localhost
+    password:
+feign:
+  okhttp:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
