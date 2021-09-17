@@ -11,13 +11,13 @@ spring:
         server-addr: 10.30.5.92:8848
     gateway:
       routes: #配置路由规则
-        - id: oauth2-api-route
+        - id: micro-serverless-api
           uri: lb://micro-serverless-api
           predicates:
             - Path=/api/**
           filters:
             - StripPrefix=1
-        - id: oauth2-auth-route
+        - id: micro-serverless-auth
           uri: lb://micro-serverless-auth
           predicates:
             - Path=/auth/**
