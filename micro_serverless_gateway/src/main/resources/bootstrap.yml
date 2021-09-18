@@ -40,3 +40,6 @@ spring:
             groupId: DEFAULT_GROUP
             data-type: json
             rule-type: flow
+logging:
+  file:
+    name: logs/${spring.application.name}/info.log
