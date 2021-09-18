@@ -12,6 +12,8 @@
         <module>micro_serverless_gateway</module>
         <module>micro_serverless_auth</module>
         <module>micro_serverless_api</module>
+        <module>micro_serverless_admin</module>
+        <module>micro_serverless_monitor</module>
     </modules>
 
     <properties>
@@ -22,6 +24,7 @@
         <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
         <spring-cloud.version>Hoxton.SR5</spring-cloud.version>
         <spring-boot.version>2.3.0.RELEASE</spring-boot.version>
+        <spring-boot-admin.version>2.2.3</spring-boot-admin.version>
         <hutool-version>5.3.5</hutool-version>
     </properties>
 
@@ -80,6 +83,11 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>${hutool-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+            <version>${spring-boot-admin.version}</version>
         </dependency>
     </dependencies>
 
