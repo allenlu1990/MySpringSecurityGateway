@@ -13,7 +13,6 @@
         <module>micro_serverless_auth</module>
         <module>micro_serverless_api</module>
         <module>micro_serverless_admin</module>
-        <module>micro_serverless_monitor</module>
     </modules>
 
     <properties>
